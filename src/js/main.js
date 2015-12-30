@@ -347,7 +347,6 @@ function createElementForPicture(picture) {
     if (url) {
       d.href = url;
       d.setAttribute("data-featherlight", "image");
-      console.log(picture);
       imgElem[0] = picture.serverTimestamp;
       imgElem[1] = url;
       return (url);
@@ -391,7 +390,6 @@ function createImgGallery() {
   node.appendChild(title);
 
   imgList = imgList.sort(function(a, b) {
-    console.log(a[0]);
     return parseFloat(a[0]) > parseFloat(b[0]);
   });
 
@@ -399,7 +397,6 @@ function createImgGallery() {
   for (i = 0; i < imgList.length; i++) {
     var a = document.createElement("a");
     var img = document.createElement("img");
-    console.log(imgList[i][0]);
     a.href = imgList[i][1];
     a.setAttribute("data-featherlight", "image");
     img.src = imgList[i][2];
@@ -551,7 +548,6 @@ function getMemberCount(feed) {
 
 function signin() {
   var email = prompt("Hey, what's your email?")
-  showStatus("Signing in " + email + "...");
   omlib.auth.connectEmail(email);
 }
 
