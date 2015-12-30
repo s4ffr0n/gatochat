@@ -1,0 +1,199 @@
+
+/* Layout setup */
+
+body {
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+#container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: block;
+}
+
+#feeds { 
+	top: 0;
+	left: 0;
+	position:absolute;
+	width: 300px;
+	height: 100%;
+	overflow: scroll;
+}
+#maincontainer {
+	margin: 0 300px 0 300px;
+	height: 100%;
+	background-color:#f3f3f3;
+	overflow: scroll;
+}
+
+#mainfoot {
+	height: 50px;
+}
+
+#clear {
+	clear: both;
+}
+
+#info {
+	position:absolute;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	border-left: 1px solid #cccccc;
+	background-color: #ffffff;
+	overflow: scroll;
+}
+
+/* Chat content setup */
+.chatLine {
+	margin: 5px;
+}
+
+.chatIcon {
+  width: 35px;
+  height: 35px;
+  margin: 5px 0px 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  border-radius: 50%;
+  float: left;
+}
+
+.namePlate {
+	margin: 15px 0px 2px 40px;
+	font-size: 9px;
+	color: #999999;
+	display: block;
+}
+.textEntry {
+	margin: 0px 5px 0px 5px;
+	background-color:#ffffff;
+	padding: 10px;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+.accountOwner {
+	text-align: right;
+}
+
+.linkEntry img {
+	border-radius: 0;
+	padding-right: 0;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	float: left;
+}
+
+.linkEntry {
+	max-width: 400px;
+}
+.linkTitle {
+	max-width: 400px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.linkDescription {
+	max-width: 400px;
+}
+
+.linkUrl {
+	max-width: 400px;
+	font-size: 10px;
+	color: #3399DD;
+	vertical-align: bottom;
+	text-align: right;
+	clear: both;
+}
+
+/* CSS for Feed List side */
+
+.feedListEntry {
+  font-size: 12px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  padding: 10px;
+  vertical-align: middle;
+  display: inline-block;
+  clear: both;
+}
+
+.feedListEntry:hover {
+  background: #efefef;
+}
+
+.feedListEntry img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  float: left;
+}
+
+.feedListEntry p {
+  height: 100%;
+  width: 200px;
+  overflow:	hidden;
+}
+
+.feedListSelected {
+	background-color:#f3f3f3;
+}
+
+.memberCount {
+	font-size: 9px;
+	color: #ffffff;
+	background-color:#cccccc;
+	border-radius: 30%;
+	width: 25px;
+	margin-left: 10px;
+	text-align: right;
+	padding: 1px 3px 1px 5px;
+}
+
+/* Info (Side bar) setup */
+
+#info .infoMemberLine {
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 5px;
+}
+
+#info .infoTitle {
+	padding: 75px 15px 5px 0px;
+	text-align: right;
+	font-size: 14px;
+	font-weight: bold;
+	color: #008899;
+/*	background-color: #AAEEFF; */
+	display: block;
+	border-bottom: 1px solid #999999;
+}
+
+#info .infoMember {
+	padding-left: 10px;
+	font-size: 12px;
+	color: #666666;
+	text-align: left;
+	display: inline-block;
+}
+
+#info .galleryIcon {
+	width: auto;
+	height: 75px;
+	border: 4px solid white;
+}
